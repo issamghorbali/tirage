@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="d-flex align-items-center p-3 my-3 bg-secondary rounded shadow-sm">
+
+
+      <h2 style="margin: 20px; color: #FFF">Tirage : {{ Boules.draw_at}} </h2>
+
+    </div>
+  </div>
+  <div class="row"  style="min-height: 400px;">
+
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0  d-flex" *ngFor="
+      let  boule of Boules.results" style="margin-bottom: 20px !important;">
+      <!-- Card-->
+      <div class="card shadow-sm border-0 rounded"  style="width: 100%">
+        <div class="card-body card-image p-0">
+          <div class="p-4">
+            <h5 class="card-heading">Id: {{ boule.id }}</h5>
+            <h5 class="card-heading">Type: {{ boule.type }}</h5>
+            <h5 class="card-heading">Value : {{ boule.value }}</h5>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+</div>
+
